@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Gallery App</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#E6E6FA;
+  text-align:center;
+}
+
+.box{
+  background:white;
+  width:80%;
+  max-width:400px;
+  margin:150px auto;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+button{
+  padding:12px 25px;
+  border:none;
+  background:#7b5cff;
+  color:white;
+  border-radius:8px;
+  font-size:16px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Kesii h motiii</h2>
+<button onclick="next()">le click kr</button>
+</div>
+
+<script>
+function next(){
+  let name = prompt("Enter your nickname");
+  if(name){
+    document.body.innerHTML = `
+      <h3 style="position:fixed;top:10px;left:10px;">${name}</h3>
+      <h1>Gallery Coming Soon 📸</h1>
+    `;
+  }
+}
+</script>
+
+</body>
+</html>
